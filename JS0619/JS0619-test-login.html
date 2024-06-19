@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //變數/值 比較預算子 變數/值
+        //相等 ==
+        //不相等 !=
+
+        //預設帳號:abc 密碼:123
+  
+
+        //帳號正確+密碼正確=>帳密OK
+        //帳號正確+密碼錯誤=>帳密err
+        //帳號錯誤+密碼正確=>帳密err
+        //帳號錯誤+密碼錯誤=>帳密err
+
+        let account ="abc";
+        let password ="789";
+
+        // 多層條件檢查(最後一個if可省略)
+        if (account == "abc" && password == "456") {
+            console.log("帳密ok");
+        }else if (account == "abc" && password != "456") {
+            console.log("密碼err");
+        }else if (account != "abc" && password == "456") {
+            console.log("帳號err");
+        }else if (account != "abc" && password != "456") {
+            console.log("帳密err"); }
+
+        //單層條件檢查
+        if (account == "abc" && password == "456") {
+            console.log("帳密ok");
+        }
+        if (account == "abc" && password != "456") {
+            console.log("密碼err");
+        }
+        if (account != "abc" && password == "456") {
+            console.log("帳號err");
+        }
+        if (account != "abc" && password != "456") {
+            console.log("帳密err");
+        }
+
+
+    </script>
+</body>
+</html>

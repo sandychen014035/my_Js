@@ -16,29 +16,25 @@
     bmi = Number(bmi); //字串轉數字
 
     // 測試用
-    bmi = 20
+    bmi = 50
 
 
     console.log(bmi);
 
     // 檢查bmi落在哪個區間並顯示訊息結果
+    // 多層檢查 (符合條件,執行完就停止檢查)
     // bmi<18.5
     if (bmi<18.5){
         //檢視條件成立
         console.log('體重過輕');
-    }
-
-    //18.5<=bmi<24
-    //區間資料使用交集邏輯運算子&&(AND)
-    if (bmi>=18.5 && bmi<24){
+    }else if (bmi>=18.5 && bmi<24){
         console.log('體重正常');
-    }
+    }else if (bmi>=24 && bmi<27){ console.log('體重過重');
+    }else if (bmi>=27 && bmi<30){ console.log('輕度肥胖');
+    }else if (bmi>=30 && bmi<35){ console.log('中度肥胖');
+    }else if (bmi>=35){ console.log('重度肥胖');
 
-    //bmi>=24
-    if (bmi>=24 && bmi<27){ console.log('體重過重');}
-    if (bmi>=27 && bmi<30){ console.log('輕度肥胖');}
-    if (bmi>=30 && bmi<35){ console.log('中度肥胖');}
-    if (bmi>=35){ console.log('重度肥胖');}
+    }
 
 </script>
 </body>
