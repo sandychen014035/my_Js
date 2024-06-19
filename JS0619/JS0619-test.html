@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script> 
+    //計算bmi  w體重 h身高 bmi身高/體重平方
+    let w = 48;
+    let h = 1.58;
+    let bmi 
+    bmi = w/(h*h);
+    bmi = bmi.toFixed(2);
+    bmi = Number(bmi); //字串轉數字
+    console.log(bmi);
+
+    // 檢查bmi落在哪個區間並顯示訊息結果
+    // bmi<18.5
+    if (bmi<18.5){
+        //檢視條件成立
+        console.log('體重過輕');
+    }
+
+    //18.5<=bmi<24
+    //區間資料使用交集邏輯運算子&&(AND)
+    if (bmi>=18.5 && bmi<24){
+        console.log('體重正常');
+    }
+
+    //bmi>=24
+    if (bmi>=24){ console.log('體重過重');}
+
+</script>
+</body>
+</html>
