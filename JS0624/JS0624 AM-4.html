@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //輸入分數
+        let fraction;
+        fraction = window.prompt('請輸入分數');
+
+        //將字串轉數值
+        let intfraction=Number(fraction)
+
+        //檢查是否按了取消
+        if(fraction=null){
+            console.log('您按了取消');
+        }else if(intfraction == ''){
+            console.log('分數不能空白');
+        }else if(intfraction>100 ||intfraction<0){
+            console.log(fraction + '分數不再有效範圍');
+        }else if(intfraction>=60){
+            console.log('分數及格');
+        }else if(intfraction<60){
+            console.log('分數不及格')
+        }else{
+            //以上條件不成立
+            console.log('分數輸入err');
+        }
+        
+    </script>
+</body>
+
+</html>
