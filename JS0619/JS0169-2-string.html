@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 駝峰式命名 -->
+    <!-- 大駝峰:每個單字字首大寫 -->
+    <!--小駝峰:第二個單子開始字首大寫 -->
+    <!-- 字串變數 -->
+<script>
+    let strName='建仔';
+    console.log(`毛小孩名字:${strName}`);
+    let strAge=7;
+    console.log(`毛小孩年紀:${strAge}歲`);
+    strAge = '7'; 
+    //  取得資料型態=>typeof(變數名)
+    console.log(typeof(strAge));
+    // 未轉換為數值
+    console.log(`毛小孩5年後的年紀:${strAge+5}歲`);
+    // 已轉換為數值 (暫時轉換)
+    console.log(`毛小孩5年後的年紀:${Number(strAge)+5}歲`);
+    console.log(typeof(strAge));
+    // 真正要字串轉數值,必須重新指派轉換結果給原來的變數
+    strAge=Number(strAge);
+    console.log(typeof(strAge));
+
+    // 浮點數=>帶有小數點資料
+    let pi=3.14;
+    let r=6;
+    let area=pi*r*r;
+    console.log(area);
+    console.log(parseInt(area));  //parseInt無條件捨去到整數位
+    console.log(area.toFixed(2));  //toFixed取到小數點()位 是字串
+    console.log(Number(area.toFixed(2))+2);  //若要運算=>前面+Number轉換  後面加數字
+
+</script>
+</body>
+</html>
