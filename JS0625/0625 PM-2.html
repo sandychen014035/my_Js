@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //血型判斷
+
+        let bloodtype;
+        bloodtype = window.prompt('輸入您的血型');
+        //toLowerCase()=>字串轉換為小寫
+        //trim()去除空值
+        bloodtype = bloodtype.toLowerCase(); //先去除空白再轉大(小)寫
+
+        if (bloodtype === null) {
+            document.write('您按了取消');
+        } else {
+            // 按了確定
+            // 1.去除空白後的結果是沒內容
+            bloodtype = bloodtype.trim();
+            // 2.開始檢查
+            if (bloodtype === '') {
+                document.write('無輸入');
+            } else if (bloodtype === 'a') {
+                document.write('您的血型是A型');
+            } else if (bloodtype === 'b') {
+                document.write('您的血型是B型');
+            } else if (bloodtype === 'o') {
+                document.write('您的血型是O型');
+            } else if (bloodtype === 'ab') {
+                document.write('您的血型是AB型');
+            } else { document.write('輸入錯誤'); 
+
+            }
+        }
+    </script>
+</body>
+
+</html>

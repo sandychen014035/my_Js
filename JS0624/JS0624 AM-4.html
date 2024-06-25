@@ -14,7 +14,7 @@
         fraction = window.prompt('請輸入分數');
 
         //將字串轉數值
-        let intfraction=Number(fraction)
+        let intfraction=Number(fraction);
 
         //檢查是否按了取消
         if(fraction=null){
@@ -22,7 +22,7 @@
         }else if(intfraction == ''){
             console.log('分數不能空白');
         }else if(intfraction>100 ||intfraction<0){
-            console.log(fraction + '分數不再有效範圍');
+            console.log(intfraction + '分數不再有效範圍');
         }else if(intfraction>=60){
             console.log('分數及格');
         }else if(intfraction<60){

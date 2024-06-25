@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //換行
+        //document.write('<br>')
+        
+        //血型判斷
+
+        let bloodtype;
+        bloodtype = window.prompt('輸入您的血型');
+
+        //toLowerCase()字串轉換為小寫
+        //toLocaleLowerCase()字串轉換為大寫
+        switch (bloodtype.trim().toLowerCase()) {   
+            case null:
+                document.write('您按了取消');
+                break;
+            case '':
+                document.write('無輸入');
+                break;
+            case 'a' :  // 如果沒有用toLowerCase() => 'a'.'A'(switch) or 'a'||'A'
+                document.write('您的血型是a型');
+                break;
+            case 'b' :
+                document.write('您的血型是b型');
+                break;
+            case 'o' :
+                document.write('您的血型是o型');
+                break;
+            case 'ab':
+                document.write('您的血型是ab型');
+                break;
+            default:
+                document.write('輸入錯誤');
+        }
+    </script>
+</body>
+
+</html>
